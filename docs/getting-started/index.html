@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta itemprop="datePublished" content="2023-11-26T02:23:11+00:00" id="date">
+    <meta itemprop="dateModified" content="2023-11-26T02:23:11+00:00" id="last-modified">
+    <title>KyberLib: Uncover Essential Installation Prerequisites</title>
+
+    <!-- # Start Primary Meta Tags -->
+    <meta content="Sebastien Rousseau" name="author"><meta content="Welcome to KyberLib User Guide. Get started with our Robust Rust library designed for CRYSTALS-Kyber Post-Quantum Cryptography (PQC) and compatible with no_std." name="description"><meta content="telephone=no" name="format-detection"><meta content="Shokunin 🦀 (version 0.0.20)" name="generator"><meta content="KyberLib, Rust, CRYSTALS-Kyber, Post-Quantum Cryptography, no_std, secure, cryptography, encryption, decryption, PQC" name="keywords"><meta content="en-GB" name="language"><meta content="https://kyberlib.com/getting-started/index.html" name="permalink"><meta content="general" name="rating"><meta content="no-referrer" name="referrer"><meta content="7 days" name="revisit-after"><meta content="index, follow" name="robots"><meta content="" name="theme-color"><meta content="KyberLib: Uncover Essential Installation Prerequisites" name="title"><meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- # End Primary Meta Tags -->
+
+    <!-- # Start Open Graph / Facebook Meta Tags -->
+    <meta name="og:description" content="Welcome to KyberLib User Guide. Get started with our Robust Rust library designed for CRYSTALS-Kyber Post-Quantum Cryptography (PQC) and compatible with no_std.">
+<meta name="og:image" content="https://kura.pro/kyberlib/images/logos/kyberlib.webp">
+<meta name="og:image:alt" content="Logo of KyberLib: A Rust-Powered Shield Against Quantum Threats">
+<meta name="og:image:height" content="100vh">
+<meta name="og:image:width" content="100vw">
+<meta name="og:locale" content="en_GB">
+<meta name="og:title" content="KyberLib: Uncover Essential Installation Prerequisites">
+<meta name="og:type" content="website">
+<meta name="og:url" content="https://kyberlib.com/getting-started/index.html">
+    <!-- # End Open Graph / Facebook Meta Tags -->
+
+    <!-- # Start Accessibility Meta Tags -->
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <!-- # End Accessibility Meta Tags -->
+
+    <!-- # Start Apple Meta Tags -->
+    <meta content="portrait" name="apple_mobile_web_app_orientations"><meta content="192x192" name="apple_touch_icon_sizes"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-inset"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="KyberLib: Uncover Essential Installation Prerequisites" name="apple-mobile-web-app-title"><meta content="yes" name="apple-touch-fullscreen">
+    <!-- # End Apple Meta Tags -->
+
+<!-- # Start Content Security Policy Meta Tags -->
+<meta http-equiv="Content-Security-Policy"
+content="default-src 'self';
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' *.google-analytics.com https://cdn.jsdelivr.net unpkg.com www.googletagmanager.com x.clarity.ms https://www.googletagmanager.com;
+  connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com;
+  img-src 'self' data: https: kura.pro www.googletagmanager.com;
+  style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
+  font-src 'self' https://fonts.gstatic.com;
+  media-src 'self';" />
+<!-- # End Content Security Policy Meta Tags -->
+
+
+
+    <!-- # Start Microsoft Meta Tags -->
+    <meta content="" name="msapplication-navbutton-color">
+    <!-- # End Microsoft Meta Tags -->
+
+    <!-- # Start Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@wwdseb">
+<meta name="twitter:description" content="Welcome to KyberLib User Guide. Get started with our Robust Rust library designed for CRYSTALS-Kyber Post-Quantum Cryptography (PQC) and compatible with no_std.">
+<meta name="twitter:image" content="https://kura.pro/kyberlib/images/logos/kyberlib.webp">
+<meta name="twitter:image:alt" content="Logo of KyberLib: A Rust-Powered Shield Against Quantum Threats">
+<meta name="twitter:image:height" content="100vh">
+<meta name="twitter:image:width" content="100vw">
+<meta name="twitter:site" content="https://kyberlib.com">
+<meta name="twitter:title" content="KyberLib: Uncover Essential Installation Prerequisites">
+<meta name="twitter:url" content="https://kyberlib.com">
+    <!-- # End Twitter Meta Tags -->
+
+    <!-- # Start Links -->
+    <link rel="alternate" href="https://kyberlib.com" hreflang="en" />
+    <link rel="preload" as="image" href="https://kura.pro/stock/images/banners/daniele-franchi-Vl6YuVBLEys.webp">
+    <link rel="canonical" href="https://kyberlib.com" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://kura.pro/kyberlib/images/favicon.ico"
+      sizes="16x16 32x32"
+    />
+    <link
+      as="style"
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      onload="this.onload=null;this.rel='stylesheet'"
+      rel="preload"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://kura.pro/kyberlib/images/icons/192x192.png"
+      sizes="192x192"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    <!-- # End Links -->
+
+    <!-- # Start Styles -->
+    <style>
+      @keyframes dropDown{from{transform:translateY(-.618rem)}to{transform:translateY(0)}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.active,h1,h2,h3,h4,h5,h6,strong{font-weight:400}.article-info{color:var(--theme-color);font-weight:400}.blur-light{backdrop-filter:saturate(180%) blur(20px);background-color:rgba(255,255,255,.618)}.card{overflow:hidden}.drop-down,.fade-in{animation-fill-mode:forwards}.drop-down{animation:dropDown 1.618s ease}.fade-in{animation:fadeIn 3s ease}h1,h2,h3,h4,h5,h6{color:var(--theme-color)}:root{--theme-color:rgb(40, 151, 255)}*{font-weight:300}a{color:var(--theme-color);text-decoration:none}a:hover{text-decoration:underline}pre{background:#f9f9f9;border:1px solid #ddd;border-left:3px solid var(--theme-color);color:#666;display:block;font-family:monospace;font-size:15px;line-height:1.618;margin-bottom:1.618em;max-width:100%;overflow:auto;padding:1em 1.618em;page-break-inside:avoid;word-wrap:break-word}.zoom-in{transition:transform .618s cubic-bezier(.618,1,.618,1)}.zoom-in:hover{transform:scale(1.0618)}.zoom-out{transition:transform .618s cubic-bezier(.618,1,.618,1)}.btn-info{background-color:var(--theme-color) !important;border-color:var(--theme-color) !important;}.text-info{color:var(--theme-color) !important}.zoom-out:hover{transform:scale(.618)}
+    </style>
+    <!-- # End Styles -->
+  </head>
+  <body
+    id="page-top"
+    itemscope
+    itemtype="http://schema.org/WebPage"
+    class="fw-light text-center bg-white text-start fs-6"
+  >
+    <!-- # Start Responsive navbar -->
+    <nav
+      class="navbar navbar-expand-lg bd-navbar sticky-top shadow-small border-bottom blur-light"
+      id="mainNav"
+      itemscope
+      itemtype="http://schema.org/SiteNavigationElement"
+    >
+    <div class="container-xxl p-3">
+      <a class="navbar-brand p-0 me-0 me-lg-2" href="/" aria-label="logo">
+        <img
+          class="d-inline-block align-top"
+          width="44"
+          height="44"
+          src="https://kura.pro/kyberlib/images/logos/kyberlib.webp"
+          alt="Logo of KyberLib: A Rust-Powered Shield Against Quantum Threats"
+          title="Logo of KyberLib: A Rust-Powered Shield Against Quantum Threats"
+          loading="lazy"
+        />
+      </a>
+      <span class="fs-4" itemprop="name"><a href="/" itemprop="url" title="Getting Started - Welcome to KyberLib User Guide. Get started with our Robust Rust library designed for CRYSTALS-Kyber Post-Quantum Cryptography (PQC) and compatible with no_std." class="text-decoration-none text-dark">Getting Started</a></span>
+      <button
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          class="navbar-toggler"
+          data-bs-target="#navbarSupportedContent"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav navbar-white ms-auto mb-2 bg-transparent">
+            <li class="nav-item">
+              <a
+                class="nav-link text-info"
+                href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+              class="nav-link text-info"
+              href="/about/index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/getting-started/index.html">Getting Started</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-info dropdown-toggle"
+                id="navbarDropdown"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Resources</a>
+              <ul
+                class="dropdown-menu dropdown-menu-end border border-info bg-white"
+                aria-labelledby="resourcesDropdown"
+              >
+                <li>
+                  <a class="bg-transparent dropdown-item text-info" href="/contribute/index.html">Contribute</a>
+                </li>
+                <li>
+                  <a class="bg-transparent dropdown-item text-info" href="https://github.com/sebastienrousseau/kyberlib" target="_blank">GitHub ⧉</a>
+                </li>
+                <li>
+                  <a class="bg-transparent dropdown-item text-info" href="/made-with-shokunin/index.html">Made with Shokunin</a>
+                </li>
+                <li>
+                  <a class="bg-transparent dropdown-item text-info" href="/tags/index.html">Tags</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="button btn btn-info rounded-pill text-white"
+                aria-current="page"
+                href="/contact/index.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- # End Responsive navbar -->
+
+    <!-- Main content-->
+    <main id="main" class="bd-masthead fs-5 p-5" aria-label="main">
+      <div class="text-start justify-content-between"><h1 id="h1-kyberlib" tabindex="0" itemprop="headline" id="" tabindex="0" itemprop="headline" class="kyberlib">KyberLib: Uncover Essential Installation Prerequisites</h1><p>Welcome to KyberLib User Guide. Get started with our Robust Rust library designed for CRYSTALS-Kyber Post-Quantum Cryptography (PQC) and compatible with no_std.</p><p></p><p><img src="https://kura.pro/stock/images/banners/christoph-duschl-CE_TvPHF3lA.webp" alt="KyberLib:  Setup and Usage Guide"  class="img-fluid fade-in p-3"/></p>
+<h2 id="h2-overview" tabindex="0" itemprop="subheadline" class="overview">Overview</h2>
+<p>KyberLib is a robust Rust library designed for CRYSTALS-Kyber Post-Quantum Cryptography, offering strong security guarantees. This library is compatible with <code>no_std</code>, making it suitable for embedded devices and avoids memory allocations. Additionally, it contains reference implementations with no unsafe code and provides an optimized AVX2 version by default on x86_64 platforms. You can also compile it to WebAssembly (WASM) using wasm-bindgen.</p>
+<h2 id="h2-features" tabindex="0" itemprop="subheadline" class="features">Features</h2>
+<h3 id="h3-core" tabindex="0" itemprop="subheadline" class="core">Core Features</h3>
+<ul>
+<li><strong><code>no_std</code> compatible</strong>: No dependence on the Rust standard library</li>
+<li><strong>Avoid allocations</strong>: Uses stack-based data structures only</li>
+<li><strong>Configurable</strong>: Features to enable different parameter sets</li>
+<li><strong>Optimised x86_64</strong>: Uses assembly for performance-critical code, including an optimised AVX2 version by default.</li>
+<li><strong>Safe code</strong>: Reference implementations have no <code>unsafe</code> blocks</li>
+<li><strong>WebAssembly Support</strong>: Can be compiled to WASM using wasm-bindgen.</li>
+</ul>
+<h3 id="h3-advanced" tabindex="0" itemprop="subheadline" class="advanced">Advanced Features</h3>
+<ul>
+<li><strong>Allocation-free Guarantee</strong>: KyberLib guarantees all its core cryptography operations are free of heap allocations.</li>
+<li><strong>Assembly Optimizations</strong>: The x86_64 assembly implementations use AVX2 instructions for high performance.</li>
+<li><strong>Security</strong>: KyberLib contains no unsafe code in its public API surface.</li>
+</ul>
+<h2 id="h2-functionality" tabindex="0" itemprop="subheadline" class="functionality">Functionality</h2>
+<ul>
+<li><strong>Key Generation</strong>: Create public/private key pairs</li>
+<li><strong>Encapsulation</strong>: Encapsulate a shared secret with a public key</li>
+<li><strong>Decapsulation</strong>: Decapsulate a shared secret with a private key</li>
+<li><strong>Key Exchange</strong>: Perform authenticated key exchanges</li>
+</ul>
+<p>See <a href="https://docs.rs/kyberlib" title="KyberLib on Docs.rs">Documentation ⧉</a> for full API details.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="Divider" title="Divider" /></p>
+<h2 id="h2-getting" tabindex="0" itemprop="subheadline" class="getting">Getting Started</h2>
+<p>It takes just a few minutes to get up and running with <code>kyberlib</code>.</p>
+<h3 id="h3-requirements" tabindex="0" itemprop="subheadline" class="requirements">Requirements</h3>
+<p>The minimum supported Rust toolchain version is currently Rust
+<strong>1.56.0</strong> or later (stable).</p>
+<h3 id="h3-installation" tabindex="0" itemprop="subheadline" class="installation">Installation</h3>
+<p>To install <code>kyberlib</code>, you need to have the Rust toolchain installed on
+your machine. You can install the Rust toolchain by following the
+instructions on the <a href="https://www.rust-lang.org/learn/get-started" title="Rust">Rust website ⧉</a>.</p>
+<p>Once you have the Rust toolchain installed, you can install <code>kyberlib</code>
+using the following command:</p>
+<pre lang="shell"><code>cargo install kyberlib
+</code></pre>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="Divider" title="Divider" /></p>
+<h2 id="h2-usage" tabindex="0" itemprop="subheadline" class="usage">Usage</h2>
+<p>To use the <code>kyberlib</code> library in your project, add the following to your
+<code>Cargo.toml</code> file:</p>
+<pre lang="toml"><code>[dependencies]
+kyberlib = &quot;0.0.2&quot;
+</code></pre>
+<p>Add the following to your <code>main.rs</code> file:</p>
+<pre lang="rust"><code>extern crate kyberlib;
+use kyberlib::*;
+</code></pre>
+<p>then you can use the functions in your application code.</p>
+<p>For optimisations on x86 platforms enable the <code>avx2</code> feature and the following RUSTFLAGS:</p>
+<pre lang="shell"><code>export RUSTFLAGS=&quot;-C target-feature=+aes,+avx2,+sse2,+sse4.1,+bmi2,+popcnt&quot;
+</code></pre>
+<h3 id="h3-key" tabindex="0" itemprop="subheadline" class="key">Key Encapsulation</h3>
+<pre lang="rust"><code>// Generate Keypair
+let keys_bob = keypair(&amp;mut rng)?;
+
+// Alice encapsulates a shared secret using Bob's public key
+let (ciphertext, shared_secret_alice) = encapsulate(&amp;keys_bob.public, &amp;mut rng)?;
+
+// Bob decapsulates a shared secret using the ciphertext sent by Alice
+let shared_secret_bob = decapsulate(&amp;ciphertext, &amp;keys_bob.secret)?;
+
+assert_eq!(shared_secret_alice, shared_secret_bob);
+</code></pre>
+<h3 id="h3-unilaterally" tabindex="0" itemprop="subheadline" class="unilaterally">Unilaterally Authenticated Key Exchange</h3>
+<pre lang="rust"><code>let mut rng = rand::thread_rng();
+
+// Initialize the key exchange structs
+let mut alice = Uake::new();
+let mut bob = Uake::new();
+
+// Generate Bob's Keypair
+let bob_keys = keypair(&amp;mut rng)?;
+
+// Alice initiates key exchange
+let client_init = alice.client_init(&amp;bob_keys.public, &amp;mut rng)?;
+
+// Bob authenticates and responds
+let server_response = bob.server_receive(
+  client_init, &amp;bob_keys.secret, &amp;mut rng
+)?;
+
+// Alice decapsulates the shared secret
+alice.client_confirm(server_response)?;
+
+// Both key exchange structs now have the same shared secret
+assert_eq!(alice.shared_secret, bob.shared_secret);
+</code></pre>
+<h3 id="h3-mutually" tabindex="0" itemprop="subheadline" class="mutually">Mutually Authenticated Key Exchange</h3>
+<p>Follows the same workflow except Bob requires Alice’s public keys:</p>
+<pre lang="rust"><code>let mut alice = Ake::new();
+let mut bob = Ake::new();
+
+let alice_keys = keypair(&amp;mut rng)?;
+let bob_keys = keypair(&amp;mut rng)?;
+
+let client_init = alice.client_init(&amp;bob_keys.public, &amp;mut rng)?;
+
+let server_response = bob.server_receive(
+  client_init, &amp;alice_keys.public, &amp;bob_keys.secret, &amp;mut rng
+)?;
+
+alice.client_confirm(server_response, &amp;alice_keys.secret)?;
+
+assert_eq!(alice.shared_secret, bob.shared_secret);
+</code></pre>
+<h2 id="h2-errors" tabindex="0" itemprop="subheadline" class="errors">Errors</h2>
+<p>The KyberLibError enum has two variants:</p>
+<ul>
+<li><strong>InvalidInput</strong> - One or more inputs to a function are incorrectly sized. A possible cause of this is two parties using different security levels while trying to negotiate a key exchange.</li>
+<li><strong>Decapsulation</strong> - The ciphertext was unable to be authenticated. The shared secret was not decapsulated.</li>
+<li><strong>RandomBytesGeneration</strong> - Error trying to fill random bytes (i.e external (hardware) RNG modules can fail).</li>
+</ul>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="Divider" title="Divider" /></p>
+<h2 id="h2-examples" tabindex="0" itemprop="subheadline" class="examples">Examples</h2>
+<p>To get started with <code>kyberlib</code>, you can use the examples provided in the
+<code>examples</code> directory of the project.</p>
+<p>To run the examples, clone the repository and run the following command
+in your terminal from the project root directory.</p>
+<h3 id="h3-example" tabindex="0" itemprop="subheadline" class="example">Example 1: Implements an authenticated key exchange protocol</h3>
+<p>Alice and Bob exchange public keys to derive a shared secret in a way that authenticates each party.</p>
+<p>Run the following command in your terminal from the project root directory.</p>
+<pre lang="shell"><code>cargo run --example ake
+</code></pre>
+<h3 id="h3-example" tabindex="0" itemprop="subheadline" class="example">Example 2: Demonstrates key encapsulation and decapsulation</h3>
+<p>Alice generates a keypair. Bob encapsulates a secret using Alice’s public key. Alice decapsulates the secret using her private key. This allows secure communication.</p>
+<p>Run the following command in your terminal from the project root directory.</p>
+<pre lang="shell"><code>cargo run --example kem
+</code></pre>
+<h3 id="h3-example" tabindex="0" itemprop="subheadline" class="example">Example 3: Implements an unauthenticated key exchange protocol</h3>
+<p>Alice and Bob exchange public information to derive a shared secret without authenticating each other. Provides confidentiality but not authentication.</p>
+<p>Run the following command in your terminal from the project root directory.</p>
+<pre lang="shell"><code>cargo run --example uake
+</code></pre>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="Divider" title="Divider" /></p>
+<h3 id="h3-documentation" tabindex="0" itemprop="subheadline" class="documentation">Documentation</h3>
+<p>For comprehensive information and resources related to <code>KyberLib</code>, we invite you
+to explore our extensive documentation.</p>
+<p>Detailed guides, API references, and examples are available on <a href="https://docs.rs/kyberlib" title="KyberLib on Docs.rs">docs.rs ⧉</a>,
+where you’ll find in-depth material to support your development needs.</p>
+<p>For library-specific details and to access our collection of Rust libraries,
+visit <a href="https://lib.rs/crates/kyberlib" title="KyberLib on Lib.rs">lib.rs ⧉</a>.</p>
+<p>Additionally, you can explore <a href="https://crates.io/crates/kyberlib" title="KyberLib on Crates.io">crates.io ⧉</a> to find a wide range of Rust
+crates, which include the necessary tools and libraries to enhance your
+projects.</p>
+<p>These resources are designed to provide you with the most up-to-date
+and thorough information to assist in your development endeavours.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="Divider" title="Divider" /></p>
+</div>
+    </main>
+
+    <!-- Footer-->
+    <footer id="footer" aria-label="footer" class="footer border-top mt-auto py-3">
+      <img
+        alt="Start Building Secure Applications with KyberLib"
+        height="32"
+        src="https://kura.pro/kyberlib/images/logos/kyberlib.webp"
+        width="32"
+      />
+      <span class="px-2">© 2023 KyberLib. All rights reserved.</span>
+      <p class="mb-0">
+        <span class="px-2"><a href="/contact/index.html">Contact</a></span>
+        <span class="px-2"><a href="/privacy/index.html">Privacy & Cookie Policy</a></span>
+        <span class="px-2"><a href="/terms/index.html">Terms of Use</a></span>
+      </p>
+    </footer>
+
+    <script
+      async
+      crossorigin="anonymous"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebPage",
+        "author": {
+          "@type": "Person",
+          "@id": "Sebastien Rousseau"
+        },
+        "copyrightHolder": {
+          "@type": "Person",
+          "@id": "Sebastien Rousseau"
+        },
+        "copyrightYear": "© 2023 KyberLib. All rights reserved.",
+        "creator": {
+          "@type": "Person",
+          "@id": "Sebastien Rousseau"
+        },
+        "dateModified": "2023-11-26T02:23:11+00:00",
+        "datePublished": "2023-11-26T02:23:11+00:00",
+        "description": "Welcome to KyberLib User Guide. Get started with our Robust Rust library designed for CRYSTALS-Kyber Post-Quantum Cryptography (PQC) and compatible with no_std.",
+        "headline": "Start Building Secure Applications with KyberLib",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://kura.pro/kyberlib/images/logos/kyberlib.webp"
+        },
+        "inLanguage": "en-GB",
+        "mainEntityOfPage": "https://kyberlib.com/getting-started/index.html",
+        "name": "Getting Started",
+        "publisher": {
+          "@type": "Person",
+          "@id": "Sebastien Rousseau"
+        }
+      }
+    </script>
+    <script type="module" defer>
+      // This is an Immediately Invoked Function Expression (IIFE) which helps
+      // to avoid declaring any globals.
+      (function () {
+        // Create a new script element
+        var script = document.createElement("script");
+
+        // Set the source of the script element to "/main.js".
+        // A timestamp is appended as a query string to ensure the browser
+        // always fetches the latest version of the script, bypassing the
+        // cache.
+        script.src = "/main.js";
+
+        // The script is of type "text/javascript"
+
+        // The script is set to execute asynchronously as soon as it's
+        //available
+
+        // Append the script element to the head of the document
+        document.head.appendChild(script);
+      })(); // The function is immediately invoked
+    </script>
+    <script>
+      // JavaScript code
+      var dropDownElements = document.querySelectorAll('.drop-down');
+      dropDownElements.forEach(function(element) {
+        element.classList.add('animate');
+      });
+
+      window.addEventListener('scroll', function() {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        dropDownElements.forEach(function(element) {
+          if (scrollTop === 0) {
+            element.classList.add('animate');
+          } else {
+            element.classList.remove('animate');
+          }
+        });
+      });
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJ9GKKGGE7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BJ9GKKGGE7');
+    </script>
+  </body>
+</html>

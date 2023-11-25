@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://kyberlib.com/contact/index.html/sitemap.xml

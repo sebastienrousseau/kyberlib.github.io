@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://kyberlib.com/offline/index.html/sitemap.xml
