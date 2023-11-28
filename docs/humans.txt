@@ -1,6 +1,6 @@
 /* TEAM */
 	Name: Sebastien Rousseau
-	Website: https://kyberlib.com
+	Website: https://kyberlib.com/index.html
 	Twitter: @wwdseb
 	Location: London, UK
 

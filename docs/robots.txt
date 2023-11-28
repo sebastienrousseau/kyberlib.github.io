@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://kyberlib.com/sitemap.xml
+Sitemap: https://kyberlib.com/index.html/sitemap.xml

@@ -12,7 +12,7 @@ changefreq: "weekly"
 charset: "utf-8"
 cname: ""
 copyright: "© 2023 KyberLib. All rights reserved."
-date: "Nov 26, 2023"
+date: "Nov 28, 2023"
 description: "A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algorithm, to Protect Your Data from Quantum Threats and Cryptanalytic Attacks."
 download: ""
 format-detection: "telephone=no"
@@ -44,7 +44,7 @@ subtitle: "Empowering Secure Communications in the Quantum Era with KyberLib"
 tags: "quantum-safe, cryptography, KyberLib, Rust, CRYSTALS-Kyber, lattice-based, NIST, standardization, KEM, digital signatures, lightweight, hash-based, Kyber512, Kyber768, Kyber1024, security, efficiency, versatility, no-std, memory safety, system-level, embedded, WebAssembly, web"
 theme_color: "rgb(40, 151, 255)"
 title: "KyberLib: A Rust-Powered Shield Against Quantum Threats"
-url: "https://kyberlib.com"
+url: "https://kyberlib.com/about/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
@@ -56,11 +56,11 @@ generator: "Shokunin 🦀 (version 0.0.20)"
 item_description: "A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algorithm, to Protect Your Data from Quantum Threats and Cryptanalytic Attacks."
 item_guid: "https://kyberlib.com/about/rss.xml"
 item_link: "https://kyberlib.com/about/rss.xml"
-item_pub_date: "2023-11-26T02:23:11+00:00"
+item_pub_date: "2023-11-28T07:00:07+00:00"
 item_title: "KyberLib: A Rust-Powered Shield Against Quantum Threats"
-last_build_date: "2023-11-26T02:23:11+00:00"
+last_build_date: "2023-11-28T07:00:07+00:00"
 managing_editor: "contact@kyberlib.com"
-pub_date: "2023-11-26T02:23:11+00:00"
+pub_date: "2023-11-28T07:00:07+00:00"
 ttl: "60"
 type: "website"
 webmaster: "contact@kyberlib.com"
@@ -95,7 +95,7 @@ twitter_url: "https://kyberlib.com/about/index.html"
 
 # Humans.txt - The Humans.txt front matter (YAML).
 
-author_website: "https://kyberlib.com"
+author_website: "https://kyberlib.com/about/index.html"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
@@ -143,7 +143,7 @@ Each point on the lattice is formed by combining these basis vectors in various 
 
 ![3D Lattice Representation with Basis Vectors][06].class=\"img-fluid mx-auto d-block\"
 
-In cryptography, lattices are employed as the basis for certain cryptographic algorithms. LBC exploits the mathematical properties of lattices to create secure cryptographic schemes that are resistant to attacks from quantum computers. Quantum computers pose a significant threat to conventional cryptography, as they can efficiently break algorithms that rely on factoring large numbers or solving discrete logarithm problems.
+In cryptography, lattices are employed as the basis for certain cryptographic algorithms. Lattice-Based Cryptography (LBC) exploits the mathematical properties of lattices to create secure cryptographic schemes that are resistant to attacks from quantum computers. Quantum computers pose a significant threat to conventional cryptography, as they can efficiently break algorithms that rely on factoring large numbers or solving discrete logarithm problems.
 
 CRYSTALS-Kyber exemplifies the strengths of LBC, providing robust resistance against quantum attacks coupled with exceptional efficiency and key size. Its multiple platforms and compatibility with cryptography make it a reliable quantum-era data security option.
 
@@ -182,8 +182,8 @@ Additionally, KyberLib's WebAssembly compatibility enhances its utility in web a
 [00]: /getting-started/index.html "Getting Started"
 [01]: https://pq-crystals.org/kyber/ "Kyber: A CCA-secure module-lattice-based KEM"
 [02]: https://pq-crystals.org/dilithium/ "Dilithium: A CCA-secure lattice-based signature scheme"
-[03]: https://pq-crystals.org/falcon/ "FALCON: A post-quantum signature scheme"
-[04]: https://pq-crystals.org/sphincs/ "SPHINCS+: A stateless hash-based signature scheme"
+[03]: https://falcon-sign.info/ "FALCON: A post-quantum signature scheme"
+[04]: https://sphincs.org/ "SPHINCS+: A stateless hash-based signature scheme"
 [05]: https://kura.pro/stock/diagrams/kyber-vs-classical.webp "Comparison of Security Levels between Classical and Quantum-Resistant Algorithms"
 [06]: https://kura.pro/stock/diagrams/3D-lattice-graph.webp "3D Lattice Representation with Basis Vectors"
 
