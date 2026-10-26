@@ -1,145 +1,52 @@
 ---
-
-# Front Matter (YAML)
-
-author: "Sebastien Rousseau"
-banner_alt: "Privacy and Security in a Quantum World"
-banner_height: "100vh"
-banner_width: "100vw"
-banner: "https://kura.pro/kyberlib/images/github/github-kyberlib.webp"
-cdn: "https://kura.pro"
-changefreq: "weekly"
-charset: "utf-8"
-cname: "kyberlib.com"
-copyright: "© 2023 KyberLib. All rights reserved."
-date: "Nov 28, 2023"
-description: "KyberLib: a robust Rust library for CRYSTALS-Kyber post-quantum cryptography, offering strong security guarantees and compatibility with no_std environments."
-download_url: "https://github.com/sebastienrousseau/kyberlib/archive/refs/tags/v0.0.2.zip"
-download_title: "Download KyberLib ↓"
-format-detection: "telephone=no"
-hero_description: "KyberLib: a robust Rust library for CRYSTALS-Kyber post-quantum cryptography, offering strong security guarantees and compatibility with no_std environments."
-hreflang: "en"
-icon: "https://kura.pro/kyberlib/images/favicon.ico"
-id: "https://kyberlib.com/index.html"
-image_alt: "Logo of KyberLib, a robust Rust library for CRYSTALS-Kyber post-quantum cryptography, offering strong security guarantees and compatibility with no_std environments."
-image_height: "100vh"
-image_width: "100vw"
-image: "https://kura.pro/kyberlib/images/logos/kyberlib.webp"
-keywords: "KyberLib, Rust library, post-quantum cryptography, PQC, secure communication, cryptography, Rust, security, performance, embedded devices, WebAssembly, WASM"
-language: "en-GB"
-layout: "index"
-locale: "en_GB"
-logo_alt: "Logo of KyberLib, a robust Rust library for CRYSTALS-Kyber post-quantum cryptography, offering strong security guarantees and compatibility with no_std environments."
-logo_height: "44"
-logo_width: "44"
-logo: "https://kura.pro/kyberlib/images/logos/kyberlib.webp"
-menu: "active"
-measurementID: "G-BJ9GKKGGE7"
-name: "KyberLib"
-permalink: "https://kyberlib.com/index.html"
-rating: "general"
-referrer: "no-referrer"
-revisit-after: "7 days"
-robots: "index, follow"
+name: "kyberlib"
 short_name: "kyberlib"
-subtitle: "KyberLib: A Modern Approach to Post-Quantum Cryptography"
-tags: "kyberlib, rust, post-quantum cryptography, pqc, secure communication, cryptography, performance, embedded devices, webassembly, wasm"
-theme_color: "rgb(40, 151, 255)"
-title: "KyberLib: Secure Post-Quantum Cryptography with Rust"
-url: "https://kyberlib.com/index.html"
-viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
-
-# RSS - The RSS feed front matter (YAML).
-
-atom_link: "https://kyberlib.com/rss.xml"
-category: "Cryptography, Security, Post-quantum cryptography, Rust, Programming Languages, Libraries, Embedded Devices, WebAssembly, Performance, Open Source"
-docs: "https://validator.w3.org/feed/docs/rss2.html"
-generator: "Shokunin 🦀 (version 0.0.20)"
-item_description: "KyberLib: a robust Rust library for CRYSTALS-Kyber post-quantum cryptography, offering strong security guarantees and compatibility with no_std environments."
-item_guid: "https://kyberlib.com/rss.xml"
-item_link: "https://kyberlib.com/rss.xml"
-item_pub_date: "2023-11-28T07:00:07+00:00"
-item_title: "Shokunin - RSS Feed"
-last_build_date: "2023-11-28T07:00:07+00:00"
-managing_editor: "contact@kyberlib.com"
-pub_date: "2023-11-28T07:00:07+00:00"
-ttl: "60"
-type: "website"
-webmaster: "contact@kyberlib.com"
-
-# Apple - The Apple front matter (YAML).
-
-apple_mobile_web_app_orientations: "portrait"
-apple_touch_icon_sizes: "192x192"
-apple-mobile-web-app-capable: "yes"
-apple-mobile-web-app-status-bar-inset: "black"
-apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "KyberLib: Secure Post-Quantum Cryptography with Rust"
-apple-touch-fullscreen: "yes"
-
-# MS Application - The MS Application front matter (YAML).
-
-msapplication-config: "https://kyberlib.com/browserconfig.xml"
-msapplication-tap-highlight: "no"
-msapplication-TileColor: "rgb(40, 151, 255)"
-msapplication_tile_image: "https://kura.pro/kyberlib/images/logos/kyberlib.webp"
-
-# Twitter Card - The Twitter Card front matter (YAML).
-
-twitter_card: "summary"
-twitter_creator: "@wwdseb"
-twitter_description: "KyberLib: a robust Rust library for CRYSTALS-Kyber post-quantum cryptography, offering strong security guarantees and compatibility with no_std environments."
-twitter_image: "https://kura.pro/kyberlib/images/logos/kyberlib.webp"
-twitter_image_alt: "Logo of KyberLib, a robust Rust library for CRYSTALS-Kyber post-quantum cryptography, offering strong security guarantees and compatibility with no_std environments."
-twitter_site: "@wwdseb"
-twitter_title: "KyberLib: Secure Post-Quantum Cryptography with Rust"
-twitter_url: "https://kyberlib.com/"
-
-# Humans.txt - The Humans.txt front matter (YAML).
-
-author_website: "https://kyberlib.com/index.html"
-author_twitter: "@wwdseb"
-author_location: "London, UK"
-thanks: "Thanks for reading!"
-site_last_updated: "2023-10-22"
-site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
-site_components: "Shokunin SSG, Shokunin CLI, Shokunin Templates, Kaishi Templates, Kaishi Themes"
-site_software: "Shokunin, Rust"
-
+title: "kyberlib: FIPS 203 ML-KEM post-quantum key exchange for Rust"
+description: "kyberlib is a pure-Rust implementation of FIPS 203 ML-KEM (ML-KEM-512, 768 and 1024), the post-quantum key-encapsulation mechanism standardised from CRYSTALS-Kyber, for std, no_std and WebAssembly."
+keywords: "kyberlib, ML-KEM, FIPS 203, CRYSTALS-Kyber, post-quantum cryptography, Rust, key encapsulation, no_std, WebAssembly"
+author: "Sebastien Rousseau"
+date: "2026-10-26"
+news_publication_date: "2026-10-26"
+layout: "index"
+language: "en-GB"
+schema: "page"
+changefreq: "weekly"
+eyebrow: "Open-source Rust library"
+headline: "Post-quantum key exchange for Rust, built to FIPS 203"
+lead: "kyberlib implements ML-KEM, the key-encapsulation mechanism NIST standardised from CRYSTALS-Kyber, in pure Rust, and passes all 180 NIST ACVP test vectors."
 ---
+## What is kyberlib?
 
-## Overview
+kyberlib is a free, open-source Rust library that implements **FIPS 203
+ML-KEM**, the post-quantum key-encapsulation mechanism NIST published in
+August 2024 as the standardised form of CRYSTALS-Kyber. Two parties use it to
+agree on a 32-byte shared secret: the receiver generates a key pair, the sender
+encapsulates a secret against the public key, and the receiver decapsulates
+the ciphertext to recover the same secret. It supports ML-KEM-512,
+ML-KEM-768 and ML-KEM-1024, builds with or without the Rust standard library,
+and is dual-licensed under Apache-2.0 or MIT.
 
-KyberLib is a robust Rust library designed specifically for CRYSTALS-Kyber Post-Quantum Cryptography (PQC), offering strong security guarantees. This lightweight and efficient library is compatible with `no_std`, making it suitable for embedded devices and resource-constrained environments. KyberLib avoids memory allocations, ensuring minimal overhead and optimized performance. Additionally, it contains reference implementations with no unsafe code, adhering to strict security standards. For enhanced performance on x86_64 platforms, KyberLib provides an optimized AVX2 version by default. The library also supports compilation to WebAssembly (WASM) using wasm-bindgen, enabling its deployment in web applications and secure communication protocols.
+## Is it CRYSTALS-Kyber or ML-KEM?
 
-## Key Features
+Both names describe the same family, but the bytes differ. Up to version
+0.0.6, kyberlib implemented CRYSTALS-Kyber Round 3. Since 0.0.7 it implements
+FIPS 203 ML-KEM, which changes the key-generation domain separator, the
+encapsulation pre-hash and the rejection key derivation. Keys, ciphertexts and
+shared secrets from 0.0.6 do not work with 0.0.7 or later; the
+[migration guide](/migration/) covers the change.
 
-### Core Features
+## Can I use it in production?
 
-- **no_std compatible**: No dependence on the Rust standard library, ensuring portability across platforms.
-- **Allocation-free design**: Utilizes stack-based data structures, eliminating memory allocations and minimizing overhead.
-- **Configurable parameter sets**: Provides flexibility to select different parameter sets based on specific security and performance requirements.
-- **Optimized x86_64 assembly**: Leverages AVX2 instructions for exceptional performance on x86_64 platforms.
-- **Safe code**: Reference implementations adhere to strict safety standards, eliminating unsafe code blocks to enhance security.
-- **WebAssembly (WASM) support**: Can be compiled to WASM for deployment in web applications and secure communication protocols.
+Read the [security page](/security/) first. kyberlib is pre-1.0 and has not
+yet had a third-party audit: version 1.0 will not be tagged until one is
+complete and its findings are fixed. It is not FIPS 140-3 validated, and as a
+pure-Rust crate it cannot be on its own. The [FAQ](/faqs/) lists the other
+cases where a different library fits better today.
 
-### Advanced Features
+## Who makes it?
 
-- **Allocation-free Guarantee**: KyberLib guarantees all its core cryptography operations are free of heap allocations.
-- **Assembly optimisations**: The x86_64 assembly implementations use AVX2 instructions for high performance.
-- **Security**: KyberLib contains no unsafe code in its public API surface.
-
-## Functionality
-
-KyberLib provides a comprehensive suite of cryptographic functionalities, including:
-
-- **Key generation**: Generate secure public/private key pairs for secure communication.
-- **Encapsulation**: Encrypt a shared secret using a public key, enabling secure data exchange.
-- **Decapsulation**: Decrypt a shared secret using a private key, allowing for secure data retrieval.
-- **Key exchange**: Perform authenticated key exchanges to establish secure communication channels.
-
-Ready to streamline your financial data management? KyberLib is here to make your job easier.
-
-[Embrace the future of secure communication with KyberLib][01], the robust and secure Rust library for CRYSTALS-Kyber post-quantum cryptography.
-
-[01]: /about/index.html "Learn more about the benefits of KyberLib"
+kyberlib is written by [Sebastien Rousseau](https://sebastienrousseau.com/)
+and its contributors. The source, the issue tracker and every release are on
+[GitHub](https://github.com/sebastienrousseau/kyberlib); the crates are on
+[crates.io](https://crates.io/crates/kyberlib). Read more on the
+[about page](/about/).

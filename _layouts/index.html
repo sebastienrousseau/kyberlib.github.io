@@ -1,306 +1,261 @@
-<!DOCTYPE html>
-<html lang="{{language}}">
-  <head>
-    <meta charset="{{charset}}" />
-    <meta itemprop="datePublished" content="{{item_pub_date}}" id="date">
-    <meta itemprop="dateModified" content="{{last_build_date}}" id="last-modified">
-    <title>{{title}}</title>
-
-    <!-- # Start Primary Meta Tags -->
-    {{primary}}
-    <!-- # End Primary Meta Tags -->
-
-    <!-- # Start Open Graph / Facebook Meta Tags -->
-    {{opengraph}}
-    <!-- # End Open Graph / Facebook Meta Tags -->
-
-    <!-- # Start Accessibility Meta Tags -->
-    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
-    <!-- # End Accessibility Meta Tags -->
-
-    <!-- # Start Apple Meta Tags -->
-    {{apple}}
-    <!-- # End Apple Meta Tags -->
-
-<!-- # Start Content Security Policy Meta Tags -->
-<meta http-equiv="Content-Security-Policy"
-content="default-src 'self';
-  script-src 'self' 'unsafe-inline' 'unsafe-eval' *.google-analytics.com https://cdn.jsdelivr.net unpkg.com www.googletagmanager.com x.clarity.ms https://www.googletagmanager.com;
-  connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com;
-  img-src 'self' data: https: kura.pro www.googletagmanager.com;
-  style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
-  font-src 'self' https://fonts.gstatic.com;
-  media-src 'self';" />
-<!-- # End Content Security Policy Meta Tags -->
-
-
-
-    <!-- # Start Microsoft Meta Tags -->
-    {{microsoft}}
-    <!-- # End Microsoft Meta Tags -->
-
-    <!-- # Start Twitter Meta Tags -->
-    {{twitter}}
-    <!-- # End Twitter Meta Tags -->
-
-    <!-- # Start Links -->
-    <link rel="alternate" href="{{url}}" hreflang="{{hreflang}}" />
-    <link rel="preload" as="image" href="{{banner}}">
-    <link rel="canonical" href="{{url}}" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="{{cdn}}/{{short_name}}/images/favicon.ico"
-      sizes="16x16 32x32"
-    />
-    <link
-      as="style"
-      crossorigin="anonymous"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      onload="this.onload=null;this.rel='stylesheet'"
-      rel="preload"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="{{cdn}}/{{short_name}}/images/icons/{{apple_touch_icon_sizes}}.png"
-      sizes="{{apple_touch_icon_sizes}}"
-    />
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
-    <!-- # End Links -->
-
-    <!-- # Start Styles -->
-    <style>
-      @keyframes dropDown{from{transform:translateY(-.618rem)}to{transform:translateY(0)}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.active,h1,h2,h3,h4,h5,h6,strong{font-weight:400}.article-info{color:var(--theme-color);font-weight:400}.blur-light{backdrop-filter:saturate(180%) blur(20px);background-color:rgba(255,255,255,.618)}.card{overflow:hidden}.drop-down,.fade-in{animation-fill-mode:forwards}.drop-down{animation:dropDown 1.618s ease}.fade-in{animation:fadeIn 3s ease}h1,h2,h3,h4,h5,h6{color:var(--theme-color)}:root{--theme-color:{{theme_color}}}*{font-weight:300}a{color:var(--theme-color);text-decoration:none}a:hover{text-decoration:underline}pre{background:#f9f9f9;border:1px solid #ddd;border-left:3px solid var(--theme-color);color:#666;display:block;font-family:monospace;font-size:15px;line-height:1.618;margin-bottom:1.618em;max-width:100%;overflow:auto;padding:1em 1.618em;page-break-inside:avoid;word-wrap:break-word}.zoom-in{transition:transform .618s cubic-bezier(.618,1,.618,1)}.zoom-in:hover{transform:scale(1.0618)}.zoom-out{transition:transform .618s cubic-bezier(.618,1,.618,1)}.btn-info{background-color:var(--theme-color) !important;border-color:var(--theme-color) !important;}.text-info{color:var(--theme-color) !important}.zoom-out:hover{transform:scale(.618)}
-    </style>
-    <!-- # End Styles -->
-  </head>
-  <body
-    id="page-top"
-    itemscope
-    itemtype="http://schema.org/WebPage"
-    class="fw-light text-center bg-white text-start fs-6"
-  >
-    <!-- # Start Responsive navbar -->
-    <nav
-      class="navbar navbar-expand-lg bd-navbar sticky-top shadow-small border-bottom blur-light"
-      id="mainNav"
-      itemscope
-      itemtype="http://schema.org/SiteNavigationElement"
-    >
-    <div class="container-xxl p-3">
-      <a class="navbar-brand p-0 me-0 me-lg-2" href="/" aria-label="logo">
-        <img
-          class="d-inline-block align-top"
-          width="{{logo_width}}"
-          height="{{logo_height}}"
-          src="{{logo}}"
-          alt="{{logo_alt}}"
-          title="{{logo_alt}}"
-          loading="lazy"
-        />
-      </a>
-      <span class="fs-4" itemprop="name"><a href="/" itemprop="url" title="{{name}} - {{description}}" class="text-decoration-none text-dark">{{name}}</a></span>
-      <button
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          class="navbar-toggler"
-          data-bs-target="#navbarSupportedContent"
-          data-bs-toggle="collapse"
-          type="button"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav navbar-white ms-auto mb-2 bg-transparent">
-            <li class="nav-item">
-              <a
-                class="nav-link {{menu}}"
-                aria-current="page"
-                href="/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a
-              class="nav-link text-info"
-              href="/about/index.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-info"
-                href="/getting-started/index.html">Getting Started</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link text-info dropdown-toggle"
-                id="navbarDropdown"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Resources</a>
-              <ul
-                class="dropdown-menu dropdown-menu-end border border-info bg-white"
-                aria-labelledby="resourcesDropdown"
-              >
-                <li>
-                  <a class="bg-transparent dropdown-item text-info" href="/getting-started/index.html">Getting Started</a>
-                </li>
-                <li>
-                  <a class="bg-transparent dropdown-item text-info" href="/contribute/index.html">Contribute</a>
-                </li>
-                <li>
-                  <a class="bg-transparent dropdown-item text-info" href="https://github.com/sebastienrousseau/kyberlib" target="_blank">GitHub ⧉</a>
-                </li>
-                <li>
-                  <a class="bg-transparent dropdown-item text-info" href="/made-with-shokunin/index.html">Made with Shokunin</a>
-                </li>
-                <li>
-                  <a class="bg-transparent dropdown-item text-info" href="/tags/index.html">Tags</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a
-                class="button btn btn-info rounded-pill text-white"
-                aria-current="page"
-                href="/contact/index.html">Contact</a>
-            </li>
-          </ul>
+{{#extends "base"}}
+{{#block "main"}}
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow eyebrow-hero">{{eyebrow}}</p>
+      <h1 id="hero-heading">{{headline}}</h1>
+      <p class="lead hero-lead">{{lead}}</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="{{site_path}}getting-started/">Get started</a>
+        <a class="btn btn-hero-secondary" href="{{site_path}}features/">See what it does</a>
+      </div>
+    </div>
+    <!--
+      Three cards, each a fact from the kyberlib repository: the ACVP
+      harness result (tests/test_acvp.rs), implicit rejection in
+      decapsulate, and the redacted Debug output of a decapsulation key
+      (tests/snapshots). Decorative, so hidden from assistive technology:
+      the same facts are in the page text below.
+    -->
+    <div class="hero-stage" aria-hidden="true">
+      <div class="hero-glow"></div>
+      <div class="mock mock-treasury">
+        <div class="mock-row">
+          <svg class="mock-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" /></svg>
+        </div>
+        <p class="mock-label">NIST ACVP vectors passing</p>
+        <strong class="mock-amount">180 / 180</strong>
+        <div class="mock-row">
+          <span class="mock-mono">make acvp</span>
+          <span class="mock-pill">512 · 768 · 1024</span>
         </div>
       </div>
-    </nav>
-    <!-- # End Responsive navbar -->
+      <div class="mock mock-growth">
+        <p class="mock-label mock-label-clay">Tampered ciphertext</p>
+        <strong class="mock-amount">Implicit rejection <span class="mock-pill">FIPS 203</span></strong>
+        <div class="mock-row">
+          <span class="mock-mono">dk.decapsulate(&amp;ct)</span>
+          <span class="mock-pill">no Result</span>
+        </div>
+      </div>
+      <div class="mock mock-phone">
+        <span class="mock-notch"></span>
+        <div class="mock-notice">
+          <p class="mock-notice-title">println!("{dk:?}")</p>
+          <strong class="mock-notice-amount">[REDACTED 2400 bytes]</strong>
+          <p class="mock-notice-meta">MlKem768DecapKey, zeroised on drop</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-slope" aria-hidden="true"></div>
+</section>
 
-    <!-- Header-->
-    <header class="w-100 py-5 position-relative">
-      <img
-        alt="{{banner_alt}}"
-        aria-hidden="false"
-        class="fade-in position-relative top-0 start-0 w-75 h-75"
-        data-has-animated="true"
-        data-show-type="fade-in"
-        height="{{banner_height}}"
-        loading="lazy"
-        src="{{banner}}"
-        style="object-fit: cover; z-index: -1;"
-        title="{{banner_alt}}"
-        width="{{banner_width}}"
-      />
-    </header>
-    <!-- # End Header-->
+<section class="section section-partners" aria-labelledby="targets-heading">
+  <div class="container">
+    <h2 class="section-label" id="targets-heading">Platforms and targets</h2>
+    <ul class="partners">
+      <li class="partner"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" /></svg><span>Linux</span></li>
+      <li class="partner"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" /></svg><span>macOS</span></li>
+      <li class="partner"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" /></svg><span>Windows</span></li>
+      <li class="partner"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" /></svg><span>WebAssembly</span></li>
+      <li class="partner"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" /><rect x="9" y="9" width="6" height="6" /><line x1="9" y1="1" x2="9" y2="4" /><line x1="15" y1="1" x2="15" y2="4" /><line x1="9" y1="20" x2="9" y2="23" /><line x1="15" y1="20" x2="15" y2="23" /></svg><span>no_std + alloc</span></li>
+    </ul>
+  </div>
+</section>
 
-    <!-- Main content-->
-    <main id="main" class="bd-masthead fs-5 p-5" aria-label="main">
-      <div class="text-start justify-content-between">{{content}}</div>
-    </main>
+<section class="section" id="features" aria-labelledby="features-heading">
+  <div class="container stack">
+    <div class="section-head">
+      <p class="eyebrow">What it does</p>
+      <h2 id="features-heading">A post-quantum key exchange you can audit</h2>
+      <p class="lead">Each card opens its section on the features page.</p>
+    </div>
+    <div class="grid grid-3">
+      <article class="card">
+        <span class="icon-badge badge-blue" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg></span>
+        <h3>FIPS 203 ML-KEM</h3>
+        <p>ML-KEM-512, ML-KEM-768 and ML-KEM-1024, the key-encapsulation mechanism NIST standardised from CRYSTALS-Kyber, behind one KemCore trait.</p>
+        <a class="card-link" href="{{site_path}}features/#fips-203-ml-kem">How the API is shaped</a>
+      </article>
+      <article class="card">
+        <span class="icon-badge badge-green" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" /></svg></span>
+        <h3>NIST ACVP conformance</h3>
+        <p>All 180 key-generation, encapsulation and decapsulation vectors from NIST's ACVP server pass byte for byte, across the three parameter sets.</p>
+        <a class="card-link" href="{{site_path}}features/#nist-acvp-conformance">How conformance is tested</a>
+      </article>
+      <article class="card">
+        <span class="icon-badge badge-clay" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg></span>
+        <h3>KyberSlash-clean arithmetic</h3>
+        <p>No division or remainder on secret-derived values. A script in CI fails the build if one is reintroduced.</p>
+        <a class="card-link" href="{{site_path}}features/#kyberslash-clean-arithmetic">How timing leaks are kept out</a>
+      </article>
+      <article class="card">
+        <span class="icon-badge badge-gold" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg></span>
+        <h3>No unsafe code by default</h3>
+        <p>The default build compiles with unsafe code forbidden. Only the optional AVX2 backend opts back in.</p>
+        <a class="card-link" href="{{site_path}}features/#no-unsafe-code-in-the-default-build">How unsafe is contained</a>
+      </article>
+      <article class="card">
+        <span class="icon-badge badge-burgundy" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" /><path d="M7 11V7a5 5 0 0 1 9.9-1" /></svg></span>
+        <h3>Secret keys that clean up after themselves</h3>
+        <p>Decapsulation keys cannot be copied, are wiped from memory when dropped, and print as [REDACTED] in logs and panics.</p>
+        <a class="card-link" href="{{site_path}}features/#secret-keys-that-clean-up-after-themselves">How secrets are handled</a>
+      </article>
+      <article class="card">
+        <span class="icon-badge badge-navy" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" /></svg></span>
+        <h3>WebAssembly and no_std</h3>
+        <p>The core builds without the standard library for embedded targets, and kyberlib-wasm wraps it for browsers and JavaScript runtimes.</p>
+        <a class="card-link" href="{{site_path}}features/#webassembly">Where it runs</a>
+      </article>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer-->
-    <footer id="footer" aria-label="footer" class="footer border-top mt-auto py-3">
-      <img
-        alt="{{subtitle}}"
-        height="32"
-        src="{{cdn}}/{{short_name}}/images/logos/{{short_name}}.webp"
-        width="32"
-      />
-      <span class="px-2">{{copyright}}</span>
-      <p class="mb-0">
-        <span class="px-2"><a href="/contact/index.html">Contact</a></span>
-        <span class="px-2"><a href="/privacy/index.html">Privacy & Cookie Policy</a></span>
-        <span class="px-2"><a href="/terms/index.html">Terms of Use</a></span>
-      </p>
-    </footer>
+<section class="section section-soft" id="parameter-sets" aria-labelledby="parameter-sets-heading">
+  <div class="container stack">
+    <div class="section-head">
+      <p class="eyebrow">Parameter sets</p>
+      <h2 id="parameter-sets-heading">Three security levels, one trait</h2>
+      <p class="lead">All three implement KemCore and can be used together in one build. Sizes are in bytes.</p>
+    </div>
+    <div class="grid grid-3">
+      <article class="card">
+        <p class="tag tag-green">NIST category 1</p>
+        <h3>ML-KEM-512</h3>
+        <p>Public key 800, secret key 1,632, ciphertext 768. The smallest keys and ciphertexts.</p>
+        <a class="card-link" href="{{site_path}}documentation/#parameter-sets">Compare the parameter sets</a>
+      </article>
+      <article class="card">
+        <p class="tag tag-blue">NIST category 3</p>
+        <h3>ML-KEM-768</h3>
+        <p>Public key 1,184, secret key 2,400, ciphertext 1,088. The default parameter set, and the one used by the hybrid TLS key exchange.</p>
+        <a class="card-link" href="{{site_path}}documentation/#parameter-sets">Compare the parameter sets</a>
+      </article>
+      <article class="card">
+        <p class="tag tag-clay">NIST category 5</p>
+        <h3>ML-KEM-1024</h3>
+        <p>Public key 1,568, secret key 3,168, ciphertext 1,568. The highest security level.</p>
+        <a class="card-link" href="{{site_path}}documentation/#parameter-sets">Compare the parameter sets</a>
+      </article>
+    </div>
+  </div>
+</section>
 
-    <script
-      async
-      crossorigin="anonymous"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      defer
-    ></script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org/",
-        "@type": "WebPage",
-        "author": {
-          "@type": "Person",
-          "@id": "{{author}}"
-        },
-        "copyrightHolder": {
-          "@type": "Person",
-          "@id": "{{author}}"
-        },
-        "copyrightYear": "{{copyright}}",
-        "creator": {
-          "@type": "Person",
-          "@id": "{{author}}"
-        },
-        "dateModified": "{{last_build_date}}",
-        "datePublished": "{{item_pub_date}}",
-        "description": "{{description}}",
-        "headline": "{{subtitle}}",
-        "image": {
-          "@type": "ImageObject",
-          "url": "{{image}}"
-        },
-        "inLanguage": "{{language}}",
-        "mainEntityOfPage": "{{permalink}}",
-        "name": "{{name}}",
-        "publisher": {
-          "@type": "Person",
-          "@id": "{{author}}"
-        }
-      }
-    </script>
-    <script type="module" defer>
-      // This is an Immediately Invoked Function Expression (IIFE) which helps
-      // to avoid declaring any globals.
-      (function () {
-        // Create a new script element
-        var script = document.createElement("script");
+<section class="section section-dark" id="developers" aria-labelledby="dev-heading">
+  <div class="container dev-grid">
+    <div class="dev-copy stack">
+      <p class="eyebrow eyebrow-clay">Install</p>
+      <h2 id="dev-heading">A shared secret in ten lines of Rust</h2>
+      <p class="lead dev-lead">Add the crate, generate a key pair, encapsulate against the public key and decapsulate with the secret key. kyberlib needs Rust 1.74 or newer.</p>
+      <ul class="pills" aria-label="Ways to add kyberlib">
+        <li class="pill">cargo add kyberlib</li>
+        <li class="pill">cargo add kyberlib-wasm</li>
+      </ul>
+      <div class="cta-row">
+        <a class="btn btn-hero-primary" href="{{site_path}}getting-started/">Read the getting started guide</a>
+      </div>
+    </div>
 
-        // Set the source of the script element to "/main.js".
-        // A timestamp is appended as a query string to ensure the browser
-        // always fetches the latest version of the script, bypassing the
-        // cache.
-        script.src = "/main.js";
+    <figure class="code-window">
+      <figcaption class="code-titlebar">
+        <span class="traffic" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="code-filename">src/main.rs</span>
+      </figcaption>
+      <pre class="code-body"><code><span class="syn-keyword">use</span> kyberlib::{KemCore, MlKem768};
 
-        // The script is of type "text/javascript"
+<span class="syn-keyword">fn</span> <span class="syn-function">main</span>() -&gt; Result&lt;(), kyberlib::KyberLibError&gt; {
+    <span class="syn-keyword">let mut</span> rng = rand::<span class="syn-function">thread_rng</span>();
+    <span class="syn-comment">// Receiver: a key pair</span>
+    <span class="syn-keyword">let</span> (dk, ek) = MlKem768::<span class="syn-function">generate</span>(&amp;<span class="syn-keyword">mut</span> rng)?;
+    <span class="syn-comment">// Sender: a ciphertext and its shared secret</span>
+    <span class="syn-keyword">let</span> (ct, ss_sender) = ek.<span class="syn-function">encapsulate</span>(&amp;<span class="syn-keyword">mut</span> rng)?;
+    <span class="syn-comment">// Receiver: the same shared secret</span>
+    <span class="syn-keyword">let</span> ss_receiver = dk.<span class="syn-function">decapsulate</span>(&amp;ct);
+    <span class="syn-function">assert_eq!</span>(ss_sender, ss_receiver);
+    Ok(())
+}</code></pre>
+    </figure>
+  </div>
+</section>
 
-        // The script is set to execute asynchronously as soon as it's
-        //available
+<section class="section" id="trust" aria-labelledby="trust-heading">
+  <div class="container">
+    <div class="card governance-card">
+      <div class="stack">
+        <div class="eyebrow eyebrow-green">Security</div>
+        <h2 id="trust-heading">Built to be checked, not taken on trust</h2>
+        <p class="lead">kyberlib publishes its threat model, its constant-time claims function by function, and the checks behind them.</p>
+        <p>kyberlib has not had a third-party audit yet; version 1.0 will not be tagged until one is complete. The audit request for proposals and the materials package are in the repository.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="{{site_path}}security/">Read the security model</a>
+        </div>
+      </div>
+      <dl class="metrics">
+        <div class="metric">
+          <dt>NIST ACVP vectors</dt>
+          <dd>180 / 180</dd>
+        </div>
+        <div class="metric">
+          <dt>Release signing</dt>
+          <dd>Keyless cosign</dd>
+        </div>
+        <div class="metric">
+          <dt>Build provenance</dt>
+          <dd>SLSA</dd>
+        </div>
+        <div class="metric">
+          <dt>Cryptography bill of materials</dt>
+          <dd>CycloneDX</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
 
-        // Append the script element to the head of the document
-        document.head.appendChild(script);
-      })(); // The function is immediately invoked
-    </script>
-    <script>
-      // JavaScript code
-      var dropDownElements = document.querySelectorAll('.drop-down');
-      dropDownElements.forEach(function(element) {
-        element.classList.add('animate');
-      });
+<section class="section section-soft" id="scale" aria-labelledby="scale-heading">
+  <div class="container stack">
+    <div class="section-head section-head-centred">
+      <p class="eyebrow">In numbers</p>
+      <h2 id="scale-heading">What the workspace ships</h2>
+      <p class="lead mx-auto">Counted from the kyberlib repository at version 0.0.10.</p>
+    </div>
+    <dl class="grid grid-4 stats">
+      <div class="stat">
+        <dt>Parameter sets</dt>
+        <dd>3</dd>
+      </div>
+      <div class="stat">
+        <dt>ACVP vectors passing</dt>
+        <dd>180</dd>
+      </div>
+      <div class="stat">
+        <dt>Minimum Rust version</dt>
+        <dd>1.74</dd>
+      </div>
+      <div class="stat">
+        <dt>Crates on crates.io</dt>
+        <dd>2</dd>
+      </div>
+    </dl>
+    <ul class="stream" aria-label="Crates in the kyberlib workspace">
+      <li class="stream-pill"><span class="status-dot" aria-hidden="true"></span>kyberlib: on crates.io</li>
+      <li class="stream-pill"><span class="status-dot" aria-hidden="true"></span>kyberlib-wasm: on crates.io</li>
+      <li class="stream-pill"><span class="status-dot" aria-hidden="true"></span>kyberlib-hybrid: in the repository</li>
+      <li class="stream-pill"><span class="status-dot" aria-hidden="true"></span>kyberlib-pkcs8: in the repository</li>
+      <li class="stream-pill"><span class="status-dot" aria-hidden="true"></span>kyberlib-asm: in the repository</li>
+    </ul>
+  </div>
+</section>
 
-      window.addEventListener('scroll', function() {
-        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        dropDownElements.forEach(function(element) {
-          if (scrollTop === 0) {
-            element.classList.add('animate');
-          } else {
-            element.classList.remove('animate');
-          }
-        });
-      });
-    </script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{measurementID}}"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', '{{measurementID}}');
-    </script>
-  </body>
-</html>
+<section class="section">
+  <div class="container stack">
+    <div class="prose">{{!content}}</div>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="{{site_path}}getting-started/">Get started</a>
+      <a class="btn btn-secondary" href="https://github.com/sebastienrousseau/kyberlib">Source on GitHub</a>
+    </div>
+  </div>
+</section>
+{{/block}}

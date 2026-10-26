@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: https://kyberlib.com/privacy/index.html/sitemap.xml

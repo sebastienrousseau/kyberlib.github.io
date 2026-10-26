@@ -1,0 +1,26 @@
+# Site configuration for kyberlib.com, built with `make build`.
+# The paths are relative to the repository root.
+
+site_name = "kyberlib"
+site_title = "kyberlib: FIPS 203 ML-KEM for Rust"
+site_description = "kyberlib is a pure-Rust implementation of FIPS 203 ML-KEM, the post-quantum key-encapsulation mechanism standardised from CRYSTALS-Kyber, for std and no_std targets."
+base_url = "https://kyberlib.com"
+language = "en-GB"
+
+content_dir = "_posts"
+template_dir = "_layouts"
+output_dir = "docs"
+
+# Agentic discovery: /agents.txt, /.well-known/ai-plugin.json and
+# /.well-known/mcp.json. Permissive, because the site exists to be read.
+[agents]
+agents_txt = true
+ai_plugin = true
+
+[agents.mcp]
+enabled = true
+
+# Security headers for hosts that read `_headers`. GitHub Pages ignores the
+# file; it is kept so the same build deploys elsewhere with the headers.
+[edge_headers]
+targets = ["netlify", "cloudflare"]
