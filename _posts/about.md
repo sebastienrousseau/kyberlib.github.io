@@ -30,10 +30,10 @@ ML-KEM.
 | :--- | :--- |
 | **Crates** | `kyberlib` and `kyberlib-wasm` on crates.io |
 | **Language** | Rust, 2021 edition |
-| **Minimum Rust version** | 1.74 |
+| **Minimum Rust version** | 1.89 |
 | **Licence** | Apache-2.0 or MIT, at your option |
 | **Standard** | FIPS 203 ML-KEM: ML-KEM-512, ML-KEM-768, ML-KEM-1024 |
-| **Latest release** | [0.0.10](https://crates.io/crates/kyberlib/0.0.10), 11 October 2026 |
+| **Latest release** | [0.0.11](https://crates.io/crates/kyberlib/0.0.11), 26 October 2026 |
 | **Source** | [github.com/sebastienrousseau/kyberlib](https://github.com/sebastienrousseau/kyberlib) |
 | **API reference** | [docs.rs/kyberlib](https://docs.rs/kyberlib) |
 | **Security policy** | [SECURITY.md](https://github.com/sebastienrousseau/kyberlib/security/policy) |

@@ -1,9 +1,9 @@
 ---
 name: "kyberlib"
 short_name: "kyberlib"
-title: "Changelog: kyberlib releases up to 0.0.10 | kyberlib"
-description: "What changed in kyberlib's recent releases, from the move to FIPS 203 ML-KEM in 0.0.7 to 0.0.10, with links to the full changelog."
-keywords: "kyberlib changelog, kyberlib releases, kyberlib 0.0.10, kyberlib 0.0.7"
+title: "Changelog: kyberlib releases up to 0.0.11 | kyberlib"
+description: "What changed in kyberlib's recent releases, from the move to FIPS 203 ML-KEM in 0.0.7 to 0.0.11, with links to the full changelog."
+keywords: "kyberlib changelog, kyberlib releases, kyberlib 0.0.11, kyberlib 0.0.7"
 author: "Sebastien Rousseau"
 date: "2026-10-26"
 news_publication_date: "2026-10-26"
@@ -15,6 +15,20 @@ eyebrow: "Changelog"
 headline: "kyberlib releases up to 26 October 2026"
 lead: "The releases since 0.0.6, summarised from the project's CHANGELOG.md. 0.0.8 has no recorded changes."
 ---
+## 0.0.11, 26 October 2026
+
+- **Security:** formatting a key or key-exchange state with `{:?}` no longer
+  prints secret bytes
+  ([GHSA-3g97-82p7-9p2w](https://github.com/sebastienrousseau/kyberlib/security/advisories/GHSA-3g97-82p7-9p2w)).
+  `Keypair`, `Uake`, `Ake`, the Keccak and 90s AES states, and
+  kyberlib-wasm's `Keys` and `Kex` now print `[REDACTED <n> bytes]`.
+  Replace any long-term key that appears in existing logs.
+- `Uake` and `Ake` now clear their secrets on drop.
+- The minimum Rust version is now 1.89 (was 1.74).
+- The `90s-fixslice` feature builds again.
+- The signed artefacts (crate, cosign bundle, CBOM, checksums) are attached
+  to the one release page, titled `kyberlib 0.0.11`.
+
 ## 0.0.10, 11 October 2026
 
 - Dependency updates across the workspace, and refreshed GitHub Actions in

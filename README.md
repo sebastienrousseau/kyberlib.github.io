@@ -68,7 +68,7 @@ git clone https://github.com/sebastienrousseau/kyberlib.github.io.git
 cd kyberlib.github.io
 ```
 
-Install `ssg` 0.0.69 or newer from its
+Install the latest `ssg` release from its
 [releases](https://github.com/sebastienrousseau/static-site-generator/releases)
 or with `cargo install ssg`.
 
@@ -76,7 +76,8 @@ or with `cargo install ssg`.
 
 ## Requirements
 
-- **ssg** 0.0.69 or newer on `PATH` (CI pins the 0.0.69 release by SHA-256).
+- **ssg**, the latest release, on `PATH` (CI pins 0.0.73 by SHA-256 and moves
+  with each new release, `~/Code/AGENTS.md` §1.9).
 - **Python** 3.11 or newer, for the build scripts.
 - **Chrome or Chromium**, for the per-page social images in `make build`
   and for `make screenshot`. Set `CHROME` to choose the binary. On macOS
