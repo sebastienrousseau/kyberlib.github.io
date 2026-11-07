@@ -76,7 +76,7 @@ or with `cargo install ssg`.
 
 ## Requirements
 
-- **ssg**, the latest release, on `PATH` (CI pins 0.0.73 by SHA-256 and moves
+- **ssg**, the latest release, on `PATH` (CI pins 0.0.74 by SHA-256 and moves
   with each new release, `~/Code/AGENTS.md` §1.9).
 - **Python** 3.11 or newer, for the build scripts.
 - **Chrome or Chromium**, for the per-page social images in `make build`

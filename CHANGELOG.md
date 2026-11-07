@@ -4,6 +4,18 @@
 
 All notable changes to kyberlib.com are documented here.
 
+## [0.0.16] - Unreleased
+
+In lockstep with kyberlib 0.0.16.
+
+### Changed
+
+- Built with ssg 0.0.74 (was 0.0.73), released on 2026-11-07, locally
+  and in both workflows; CI checks the SHA-256 published with the
+  release.
+- No content change: the pages describe kyberlib 0.0.11, still the
+  latest published release.
+
 ## [0.0.15] - Unreleased
 
 First tagged release of the site. It ships at the kyberlib family's
