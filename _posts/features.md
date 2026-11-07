@@ -103,7 +103,7 @@ features and keep a parameter set:
 
 ```toml
 [dependencies]
-kyberlib = { version = "0.0.10", default-features = false, features = ["kyber768"] }
+kyberlib = { version = "0.0.11", default-features = false, features = ["kyber768"] }
 ```
 
 It still needs `alloc`. kyberlib never looks for randomness itself: every
@@ -143,5 +143,5 @@ variants are not implemented.
 release it builds the `.crate` file, signs it with keyless cosign (Fulcio and
 Rekor, with no long-lived signing key), records SLSA build provenance with GitHub
 artifact attestations, and generates a CycloneDX cryptography bill of
-materials. The kyberlib 0.0.10 crate on crates.io carries that provenance;
+materials. The kyberlib 0.0.11 crate on crates.io carries that provenance;
 the [security page](/security/#verifying-a-release) shows how to check it.

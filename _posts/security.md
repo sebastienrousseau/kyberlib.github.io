@@ -103,15 +103,15 @@ publishes, signed through GitHub's artifact attestations. To check the crate
 crates.io serves you:
 
 ```bash
-curl -fsSLo kyberlib-0.0.10.crate \
-  https://crates.io/api/v1/crates/kyberlib/0.0.10/download
-gh attestation verify --owner sebastienrousseau kyberlib-0.0.10.crate
+curl -fsSLo kyberlib-0.0.11.crate \
+  https://crates.io/api/v1/crates/kyberlib/0.0.11/download
+gh attestation verify --owner sebastienrousseau kyberlib-0.0.11.crate
 ```
 
-The attestation names `.github/workflows/release.yml` at the `v0.0.10` tag as
+The attestation names `.github/workflows/release.yml` at the `v0.0.11` tag as
 the build that produced the file. Releases whose assets are attached to the
 GitHub release, such as
-[v0.0.7](https://github.com/sebastienrousseau/kyberlib/releases/tag/v0.0.7),
+[v0.0.11](https://github.com/sebastienrousseau/kyberlib/releases/tag/v0.0.11),
 also carry a keyless cosign bundle, SHA-256 and SHA-512 sums and a CycloneDX
 cryptography bill of materials:
 
@@ -119,6 +119,6 @@ cryptography bill of materials:
 cosign verify-blob \
   --certificate-identity-regexp '^https://github\.com/sebastienrousseau/kyberlib/' \
   --certificate-oidc-issuer https://token.actions.githubusercontent.com \
-  --bundle kyberlib-0.0.7.crate.cosign-bundle.json \
-  kyberlib-0.0.7.crate
+  --bundle kyberlib-0.0.11.crate.cosign-bundle.json \
+  kyberlib-0.0.11.crate
 ```

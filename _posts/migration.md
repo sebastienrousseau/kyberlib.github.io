@@ -29,7 +29,7 @@ The byte-level changes are in
 ```diff
  [dependencies]
 -kyberlib = "0.0.6"
-+kyberlib = "0.0.10"
++kyberlib = "0.0.11"
 ```
 
 The free functions still compile and now call the typed API. Moving to the
@@ -52,7 +52,8 @@ Other changes in 0.0.7 that can break a build:
   import succeeds.
 - The crate builds only as an `rlib`; WebAssembly builds moved to the
   separate `kyberlib-wasm` crate.
-- The minimum Rust version is 1.74, and the crate uses the 2021 edition.
+- The minimum Rust version was 1.74 in 0.0.7 and is 1.89 since 0.0.11; the
+  crate uses the 2021 edition.
 
 ## From another Rust ML-KEM crate
 

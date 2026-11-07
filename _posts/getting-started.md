@@ -33,7 +33,7 @@ or in `Cargo.toml`:
 
 ```toml
 [dependencies]
-kyberlib = "0.0.10"
+kyberlib = "0.0.11"
 rand = "0.8"
 ```
 
@@ -95,7 +95,7 @@ random-number generator:
 
 ```toml
 [dependencies]
-kyberlib = { version = "0.0.10", default-features = false, features = ["kyber768"] }
+kyberlib = { version = "0.0.11", default-features = false, features = ["kyber768"] }
 ```
 
 The crate then builds without `std` but still needs `alloc`. See
