@@ -16,10 +16,10 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  SSG_VERSION: "0.0.73"
-  # SHA-256 of ssg-v0.0.73-x86_64-unknown-linux-musl.tar.gz, as published
+  SSG_VERSION: "0.0.74"
+  # SHA-256 of ssg-v0.0.74-x86_64-unknown-linux-musl.tar.gz, as published
   # with the release; the build stops if the download differs.
-  SSG_SHA256: "ab93900edafe578afb398f0903edb7b867522abfb6935ccf6620ada6d5aa048c"
+  SSG_SHA256: "a1786fecf47bf6bbe210da346e0b5a5558e182e0cbb64adc2fccaaa2a5f04bab"
 
 jobs:
   build:
